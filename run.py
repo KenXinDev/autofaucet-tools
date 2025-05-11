@@ -20,8 +20,12 @@ class MinerApp:
             'BOLD': '\033[1m',
             'UNDERLINE': '\033[4m'
         }
+        
+    def clear_terminal(self):
+        os.system('cls' if os.name=='nt' else 'clear')
 
     def print_header(self):
+        self.clear_terminal()
         print(f"""
 {self.colors['OKGREEN']}
 ███████╗███╗   ███╗██████╗     ███╗   ███╗██╗███╗   ██╗███████╗██████╗ 
