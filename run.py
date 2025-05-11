@@ -176,7 +176,7 @@ class MinerApp:
         self.print_header()
 
         if len(sys.argv) < 2:
-            self.print_status("Usage: python3 miner.py <config.json>", "error")
+            self.print_status("Usage: python3 run.py <config.json>", "error")
             self.print_status("Optional flags: --install-deps (force install dependencies)", "info")
             sys.exit(1)
 
